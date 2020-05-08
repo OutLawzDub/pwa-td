@@ -1,0 +1,20 @@
+{
+  "name": "htdocs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "npx es-dev-server --app-index index.html --node-resolve --watch -p 8080",
+    "database": "npx json-server --watch data/database.json --port 3001"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "idb": "^5.0.2"
+  },
+  "devDependencies": {
+    "es-dev-server": "^1.48.1",
+    "json-server": "^0.16.1",
+    "tailwindcss": "^1.4.4"
+  }
+}

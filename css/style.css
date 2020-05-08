@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: Arial;
+    text-transform: uppercase;
+    color: white;
+}
+
+form {
+    position: relative;
+    width: calc(100vw - 40px);
+    padding: 20px;
+    background: #2d3436;
+    text-align: center;
+}
+
+form input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-family: Arial;
+    font-size: 3vh;
+}
+
+form button {
+    position: relative;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #ff7675;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* List */
+
+ul {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul > li {
+    position: relative;
+    font-family: Consolas;
+    width: calc(100vw - 40px);
+    padding: 20px;
+    text-indent: 20px;
+    background: rgba(255, 118, 117, .6);
+    border-bottom: 2px dotted white;
+    cursor: pointer;
+    color: white;
+    text-transform: uppercase;
+    font-size: 2vh;
+}
+
+ul > li:nth-child(odd) {
+    background: rgba(255, 118, 117, .8);
+}
+
+ul > li > span {
+    position: absolute;
+    top: 0; bottom: 0;
+    right: 20px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    margin: auto;
+}
+
+ul > li.done {
+    background: rgba(85, 239, 196, .7);
+}
